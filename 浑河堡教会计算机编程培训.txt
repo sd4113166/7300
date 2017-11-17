@@ -1,0 +1,27 @@
+                               浑河堡教会计算机编程培训
+1.需要笔记本电脑一台
+
+ 1.1操作系统 
+
+    Windows 10 1507 版或更高版本：家庭版、专业版、教育版和企业版（不支持 LTSB 和 Windows 10 S）
+
+    Windows Server 2016：Standard 和 Datacenter
+    
+    Windows 8.1（带有更新 2919355）：核心版、专业版和企业版
+
+    Windows Server 2012 R2（带有?Update 2919355）：Essentials、Standard、Datacenter
+
+    Windows 7 SP1（带有最新 Windows 更新）：家庭高级版、专业版、企业版、旗舰版
+ 
+ 1.2 硬件要求
+
+    1.8 GHz 或更快的处理器。 推荐使用双核或更好的内核
+
+    2 GB RAM；建议 4 GB RAM（如果在虚拟机上运行，则最低 2.5 GB）
+
+    硬盘空间：高达 130 GB 的可用空间，具体取决于安装的功能；系统盘（C盘） 20-50 GB 的可用空间。
+
+    视频卡支持最小显示分辨率 720p (1280×720)；
+
+
+
