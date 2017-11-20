@@ -33,7 +33,7 @@
 ## 4.索取教材
 已报名的同学请进 **QQ群 397377386**，获取教材详细信息
 
-### 4.1.初级班 网站前端开发课程
+### 4.1.初级班-网站前端开发课程
 - html教程，[http://www.runoob.com/html/html-tutorial.html](http://www.runoob.com/html/html-tutorial.html)
 - css教程，[http://www.runoob.com/css/css-tutorial.html](http://www.runoob.com/css/css-tutorial.html)
 - css3教程，[http://www.runoob.com/css3/css3-tutorial.html](http://www.runoob.com/css3/css3-tutorial.html)
@@ -41,7 +41,7 @@
 - jquery教程，[http://www.runoob.com/jquery/jquery-tutorial.html](http://www.runoob.com/jquery/jquery-tutorial.html)
 - bootstrap教程，[http://www.runoob.com/bootstrap/bootstrap-tutorial.html](http://www.runoob.com/bootstrap/bootstrap-tutorial.html)
 
-### 4.2.中级班 C#编程基础课程
+### 4.2.中级班-C#编程基础课程
 - 《Learning hard C#学习笔记 (图灵原创)》人民邮电出版社; 第1版 (2015年2月1日)；ISBN：B00TKLJ31M
 - 《Visual C#.NET程序设计教程(第2版)》人民邮电出版社; 第2版 (2012年8月1日)；ASIN：B00R5CR9R8
 
