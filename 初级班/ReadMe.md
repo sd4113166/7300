@@ -175,7 +175,7 @@
     4.2.6 Jquery 效果-callback
     4.2.7 Jquery 效果-chaining
 
-    4.3 Jquery html
+  4.3 Jquery html
    
     4.3.1Jquery 获取
     4.3.2 Jquery 设置
