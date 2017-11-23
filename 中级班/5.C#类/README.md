@@ -35,10 +35,10 @@
 
 - 养成写注释的好习惯，编程能力中最重要的一条是代码的可维护性
 - 百度搜索“C#命名规范”，形成自己特定的命名规范，增加程序的可维护性
+- 向大家隆重介绍一个文档“C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC#\Specifications\2052\CSharp Language Specification.doc”
 
 
 ## 作业
 
 - 创建一个WinForm项目，定义一个Person类，窗体上有三个按钮，分别实现三个功能：赚钱(decimal a)、花钱(decimal b)、查询余额()，其中赚钱和花钱分别通过两个TextBox赋值
-- 百度搜索“c# i++ ++i 区别”
-- 向大家隆重介绍一个文档“C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC#\Specifications\2052\CSharp Language Specification.doc”
+- 百度搜索自学“c# i++ ++i 区别”
