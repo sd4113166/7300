@@ -362,3 +362,7 @@ Emmet使用 Text:{} 给元素添加文本内容
     <a href="">here</a> to continue
    
    [教程](http://wow.techbrood.com/tools/emmet/cs.html)
+
+# 作业 
+   练习 emment 能够熟练使用
+   将浑河堡教会小给报告表 用emment方式展示。步骤要少

@@ -134,6 +134,22 @@
     
 [教程地址](http://www.runoob.com/html/html-images.html)
 
+## 作业
+    给信仰条头投稿赞美诗歌词
+    （详细的歌单我会发到浑河堡编程群里）
+    第个学员3首歌词
+[注册信仰头条](http://faith.im/login)
+[投稿](http://faith.im/deliver)
+## 练习
+       Ctrl+Home Ctrl + End  Ctrl + Left Arrow(左移)
+       Ctrl + Right Arrow（右移） Ctrl + Up（上移）
+       Ctrl + Down Arrow（下移）
+       Shift + Left Arrow	Shift + Left Arrow
+       Shift + Right Arrow	Shift + Up Arrow	
+       Shift + Down Arrow	Shift + Ctrl + Left	
+       Shift + Ctrl + Right	Shift + Ctrl + Up	
+       Shift + Ctrl + Down	Shift + Home Shift + End
+
 
 
     
