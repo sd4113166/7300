@@ -8,7 +8,7 @@
 - 创建控制台项目，“欢迎你”
 - 讲解编译、运行、调试
 - 熟悉Visual Studio，上、左、中、右、下
-- 熟悉几个快捷键：Ctrl+S、F5、Ctrl+F5、Ctrl+Shift+B、F9、F10、F11、Alt+右箭头、F12（鼠标右键->G）
+- 熟悉几个快捷键：Ctrl+S、F5、Ctrl+F5、Ctrl+Shift+B、F9、F10、F11、Alt+右箭头、F12（鼠标右键->G、Tab-Tab）
 
 ## 常见问题
 不要纠结csc
