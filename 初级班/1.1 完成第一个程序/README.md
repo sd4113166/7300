@@ -2,7 +2,7 @@
 ![image](web.jpg)
 # 前端技能图
 
-![image](fed.jpg)
+![image](fzd.png)
 
 # 教程  
   教程地址： http://www.runoob.com/html/html-tutorial.html
