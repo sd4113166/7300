@@ -6,23 +6,21 @@
 
 ![image](fzd.png)
 
-## HTML 前端的发展
+# 1.3 HTML 前端的发展
 
 ![image](FrontEnd.jpg)
 
-# 1.3 HTML 简介
-    1.页面：由来万维网上的一个超媒体文档称之为一个页面。
-    2.主页：作为一个组织或者个人在万维网上放置开始点的页面称为主页 
-    （外语：Homepage）或首页，
-    主页中通常包括有指向其他相关页面或其他节点的指针（超级链接）。
-    3.超级链接：就是一种统一资源定位器（Uniform Resource  Locator
-    ，外语缩写URL）通过激活（点击）它，可使浏览器方便地获取新的网页。
-    这也是HTML获得广泛应用 的最重要的原因之一。
-    4.网站：在逻辑上将视为一个整体的一系列页面的有机集合称为网（WebSite)。
-    5.超级文本标记 语言（英文缩写：HTML）是为“网页创建和其它可在网页浏 览器中看到的信息”设计的一种标记语言。
-   
-## 教程地址  
-  教程地址： http://www.runoob.com/html/html-tutorial.html   
+# 1.4 HTML 简介
+    页面：由来万维网上的一个超媒体文档称之为一个页面。
+
+    主页：作为一个组织或者个人在万维网上放置开始点的页面称主页 （外语：Homepage）或首页，主页中通常包括有指向其他相关页面或其他节点的指针（超级链接）。
+
+    超级链接：就是一种统一资源定位器（Uniform Resource  Locator，外语缩写URL）通过激活（点击）它，可使浏览器方便地获取新的网页。这也是HTML获得广泛应用 的最重要的原因之一。
+    
+    网站：在逻辑上将视为一个整体的一系列页面的有机集合称为网（WebSite)。
+    超级文本标记 语言（英文缩写：HTML）是为“网页创建和其它可在网页浏 览器中看到的信息”设计的一种标记语言。
+
+[教程地址](http://www.runoob.com/html/html-tutorial.html)  
     
 ## HTML 实例
     <!DOCTYPE html>
@@ -97,7 +95,7 @@
 ![image](1-1html5.jpg)   
    查看完整网页声明类型[DOCTYPE 参考手册](http://www.runoob.com/tags/tag-doctype.html) 。
 
-# 1.4 Web 浏览器
+# 1.5 Web 浏览器
     Web浏览器（如谷歌浏览器，
     Internet Explorer，Firefox，Safari）
 ![image](browse.jpg)
@@ -109,7 +107,7 @@
       4、使用Webkit内核的浏览器：Safari、Chrome。
 
   
-# 1.5 HTML 编辑器
+# 1.6 HTML 编辑器
 ## 可以使用专业的 HTML 编辑器来编辑 HTML，菜鸟教程为大家推荐几款常用的编辑器：
 ![前端编辑器](editor.jpg)
    Visual Studio Code:  https://code.visualstudio.com/?wt.mc_id=vscom_downloads
@@ -129,7 +127,7 @@
    ctrl+tab ctrl+h  ctrl+F
    
 
-# 1.6 编写第一个程序
+# 1.7 编写第一个程序
 让学员自己编程人生第一个程序hello world!
  
 ## 编写第一个程序步骤
@@ -160,7 +158,7 @@
     鼠标右键查看
 ![在浏览器中查看元素](chrome_debug.jpg)
 
-# 1.7 作业
+# 1.8 作业
     1.以网页的形式介绍自己。介绍自己的内容主要有：姓名 、年龄、爱好、性别、家庭成员、所在教会。
 
     2.要求使用以下标签 <p> <hr> <strong> <h1> <i>  <b>  <sub>   <sup> 并且在<title></title>里填上自己的名字
