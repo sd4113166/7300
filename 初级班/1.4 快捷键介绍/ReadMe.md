@@ -365,4 +365,12 @@ Emmet使用 Text:{} 给元素添加文本内容
 
 # 作业 
    练习 emment 能够熟练使用
-   将浑河堡教会小给报告表 用emment方式展示。步骤要少
+   练习 编辑器快捷键
+      Ctrl+Home Ctrl + End  Ctrl + Left Arrow(左移)
+   Ctrl + Right Arrow（右移） Ctrl + Up（上移）
+   Ctrl + Down Arrow（下移）
+   Shift + Left Arrow	Shift + Left Arrow
+   Shift + Right Arrow	Shift + Up Arrow	
+   Shift + Down Arrow	Shift + Ctrl + Left	
+   Shift + Ctrl + Right	Shift + Ctrl + Up	
+   Shift + Ctrl + Down	Shift + Home Shift + End
