@@ -1,8 +1,8 @@
-# 前端开发工程师
+# 1.1 前端开发工程师
 
 ![image](web.jpg)
 
-# 前端技能图
+# 1.2 前端技能图
 
 ![image](fzd.png)
 
@@ -10,7 +10,7 @@
 
 ![image](FrontEnd.jpg)
 
-# HTML 简介
+# 1.3 HTML 简介
     1.页面：由来万维网上的一个超媒体文档称之为一个页面。
     2.主页：作为一个组织或者个人在万维网上放置开始点的页面称为主页 
     （外语：Homepage）或首页，
@@ -97,7 +97,7 @@
 ![image](1-1html5.jpg)   
    查看完整网页声明类型[DOCTYPE 参考手册](http://www.runoob.com/tags/tag-doctype.html) 。
 
-# Web 浏览器
+# 1.4 Web 浏览器
     Web浏览器（如谷歌浏览器，
     Internet Explorer，Firefox，Safari）
 ![image](browse.jpg)
@@ -109,7 +109,7 @@
       4、使用Webkit内核的浏览器：Safari、Chrome。
 
   
-#  HTML 编辑器
+# 1.5 HTML 编辑器
 ## 可以使用专业的 HTML 编辑器来编辑 HTML，菜鸟教程为大家推荐几款常用的编辑器：
 ![前端编辑器](editor.jpg)
    Visual Studio Code:  https://code.visualstudio.com/?wt.mc_id=vscom_downloads
@@ -129,7 +129,7 @@
    ctrl+tab ctrl+h  ctrl+F
    
 
-#  编写第一个程序
+# 1.6 编写第一个程序
 让学员自己编程人生第一个程序hello world!
  
 ## 编写第一个程序步骤
@@ -160,7 +160,7 @@
     鼠标右键查看
 ![在浏览器中查看元素](chrome_debug.jpg)
 
-# 作业
+# 1.7 作业
     1.以网页的形式介绍自己。介绍自己的内容主要有：姓名 、年龄、爱好、性别、家庭成员、所在教会。
 
     2.要求使用以下标签 <p> <hr> <strong> <h1> <i>  <b>  <sub>   <sup> 并且在<title></title>里填上自己的名字

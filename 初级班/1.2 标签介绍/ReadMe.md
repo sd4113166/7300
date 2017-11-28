@@ -1,16 +1,9 @@
 
 # 简单标签元素讲解 
-## HTML 基础- 4个实例
-    实例的演练
-
-    讲解实例
-
-    由学员演练
-
-    与学员进行交流
-
-    统计学员完成情况
-
+## 2.1 HTML 基础- 4个实例
+   
+    1.通过实例演练，学习HTML 标题 、HTML 段落、HTML 链接、HTML 图像
+    
 [教程地址](http://www.runoob.com/html/html-basic.html)
 
 ## HTML 属性
@@ -21,12 +14,7 @@
       3.使用小写属性  
       4.HTML 属性参考手册
 
-    由学员演练相关的实例
-
-    与学员进行交流
-
-    统计学员完成情况
-
+   
     
 [教程地址](http://www.runoob.com/html/html-attributes.html)
 
