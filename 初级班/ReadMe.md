@@ -1,6 +1,6 @@
 # 前端基础班培训大纲
 
-## html教程
+## HTML教程
 
 ## [1.完成第一个程序](1.1%20完成第一个程序/)
    
@@ -11,27 +11,27 @@
     1.5 HTML 编辑器
     1.6 编写第一个程序
     1.7 作业
-    
+
 ## [2.标签介绍](1.2%20标签介绍/)
 
     2.1 常用标签 
     2.2 标签属性
-    2.3  文本格式化
-    2.4  链接
-    2.5  头部
-    2.6  html css
-    2.7 html 图像
+    2.3 文本格式化
+    2.4 链接
+    2.5 头部
+    2.6 HTML css
+    2.7 HTML 图像
   
 ## [3.杂标签介绍](1.3%20复杂元素/)
 
-    3.1 html表格
-    3.2 html 列表
+    3.1 HTML表格
+    3.2 HTML 列表
     3.3 htlm区块
-    3.4 html 布局
-    3.5 html表单
-    3.6 html框架
-    3.7 html 颜色名
-    3.9 html 颜色值
+    3.4 HTML 布局
+    3.5 HTML表单
+    3.6 HTML框架
+    3.7 HTML 颜色名
+    3.9 HTML 颜色值
     3.10 速查列表
      
 ## [4.快捷键介绍](1.4%20快捷键介绍/)
@@ -41,12 +41,12 @@
     
 ##  5.多媒体标签
 
-    5.1 html 媒体（media)
-    5.2 html 插件
-    5.3 html 音频（audio)
-    5.4 html 视频（videos）
+    5.1 HTML 媒体（media)
+    5.2 HTML 插件
+    5.3 HTML 音频（audio)
+    5.4 HTML 视频（videos）
        
-##  6.html 阶段总结
+##  6.HTML 阶段总结
 
 ##  7.作品展示，优秀作品进行讲解 
 
@@ -134,9 +134,10 @@
 
 ##  2.8 作品展示，优秀作品进行讲解
 
-##  Javascript教程
+## Javascript教程
 
 ##  1.JavaScript基础
+
     1.1 JavaScript 教程导读
     1.2 JavaScript 简介
     1.3 JavaScript 用法
@@ -154,80 +155,82 @@
 
 ##  3.作品展示，优秀作品进行讲解
 
-##  Jquery 教程时）
+##  jQuery 教程
 
-##  1.Jquery 基础
+##  1.jQuery 基础
 
     1.1 jQuery 教程导读
-    1.2 Jquery 简介
-    1.3 Jquery 安装
-    1.4 Jquery 语法
-    1.5 Jquery 选择器
-    1.6 Jquery 事件
+    1.2 jQuery 简介
+    1.3 jQuery 安装
+    1.4 jQuery 语法
+    1.5 jQuery 选择器
+    1.6 jQuery 事件
 
-##  2.Jquery 效果
+##  2.jQuery 效果
 
-    2.1 Jquery 效果-隐藏和显示
-    2.2 Jquery 效果-淡入淡出
-    2.3 Jquery 效果-滑动
-    2.4 Jquery 效果-动画
-    2.5 Jquery 效果-停止动画
-    2.6 Jquery 效果-callback
-    2.7 Jquery 效果-chainin
+    2.1 jQuery 效果-隐藏和显示
+    2.2 jQuery 效果-淡入淡出
+    2.3 jQuery 效果-滑动
+    2.4 jQuery 效果-动画
+    2.5 jQuery 效果-停止动画
+    2.6 jQuery 效果-callback
+    2.7 jQuery 效果-chainin
 
-##  3.Jquery html
+##  3.jQuery HTML
 
-    3.1Jquery 获取
-    3.2 Jquery 设置
-    3.3 Jquery 添加元素
+    3.1 jQuery 获取
+    3.2 jQuery 设置
+    3.3 jQuery 添加元素
     3.4 删除元素
     3.5 css类
     3.6 方法
     3.7 尺寸
-    3.8 jquery选择
+    3.8 jQuery选择
+
 ##  4 阶段总结
 
 ##  5 作品展示，优秀作品进行讲解
 
-##  Bootstrap
+## Bootstrap
 
-##  1 bootstrap 教程
+##  1 Bootstrap 教程
 
     1.1 简介
     1.2 环境安装
-##  2.bootstrap css
-    2.1 bootstrap css 概览
-    2.2 bootstrap css 网格系统
-    2.3 bootstrap排版
-    2.4 bootstrap代码
-    2.5 bootstrap表格
-    2.6 bootstrap表单
-    2.7 bootstrap按钮
-    2.8 bootstrap图片
-    2.9 bootstrap辅助类
-    2.10 bootstrap响应式实用工具
 
-##  3.bootstrap 布局组件3
-    3.1 bootstrap字体图标
-    3.2 bootstrap下拉菜单
-    3.3 bootstrap按钮组
-    3.4 bootstrap按钮下拉菜单
-    3.5 bootstrap输入框组
-    3.6 bootstrap导航元素
-    3.7 bootstrap导航栏
-    3.8 bootstrap面包悄导航
-    3.9 bootstrap分页
-    3.10 bootstrap标签
-    3.11 bootstrap徽章
-    3.12 bootstrap超大屏幕
-    3.13 bootstrap页面标题
-    3.14 bootstrap缩略图
-    3.15 bootstrap警告
-    3.16 bootstrap进度条
-    3.17 bootstrap多媒体对象
-    3.18 bootstrap列表组
-    3.19 bootstrap面板
-    3.20 bootstrap well示例
+##  2.Bootstrap css
+    2.1 Bootstrap css 概览
+    2.2 Bootstrap css 网格系统
+    2.3 Bootstrap排版
+    2.4 Bootstrap代码
+    2.5 Bootstrap表格
+    2.6 Bootstrap表单
+    2.7 Bootstrap按钮
+    2.8 Bootstrap图片
+    2.9 Bootstrap辅助类
+    2.10 Bootstrap响应式实用工具
+
+##  3.Bootstrap 布局组件
+    3.1 Bootstrap字体图标
+    3.2 Bootstrap下拉菜单
+    3.3 Bootstrap按钮组
+    3.4 Bootstrap按钮下拉菜单
+    3.5 Bootstrap输入框组
+    3.6 Bootstrap导航元素
+    3.7 Bootstrap导航栏
+    3.8 Bootstrap面包悄导航
+    3.9 Bootstrap分页
+    3.10 Bootstrap标签
+    3.11 Bootstrap徽章
+    3.12 Bootstrap超大屏幕
+    3.13 Bootstrap页面标题
+    3.14 Bootstrap缩略图
+    3.15 Bootstrap警告
+    3.16 Bootstrap进度条
+    3.17 Bootstrap多媒体对象
+    3.18 Bootstrap列表组
+    3.19 Bootstrap面板
+    3.20 Bootstrap well示例
 
 ##  4 阶段总结
 
