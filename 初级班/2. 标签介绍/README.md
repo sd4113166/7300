@@ -35,12 +35,14 @@ HTML 属性参考手册，了解常用的属性。
 
 ## 2.5 HTML 文本格式化
 HTML 格式化标签都有哪些如下图：
+
 ![image](FormatLabel.jpg)
 
 [教程地址](http://www.runoob.com/html/html-formatting.html)
 
 ## 2.6 HTML <head>标签
 掌握运用以下标签
+
 ![image](head.jpg)
 
 
