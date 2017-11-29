@@ -98,6 +98,7 @@ HTML 中的预留字符必须被替换为字符实体。
 一些在键盘上找不到的字符也可以使用字符实体来替换。
 ## 撑握常用字符实体
 ![image](char.jpg)
+
 [教程](http://www.runoob.com/html/html-entities.html)
 
 ## 3.9 作业 

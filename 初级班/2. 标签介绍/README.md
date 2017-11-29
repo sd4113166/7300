@@ -8,7 +8,7 @@ HTML 元素的嵌套
 HTML 空元素
 HTML 元素对大小写不敏感。
 
-[教程地1](htt1://www.runoob.com/html/html-elements.html)
+
 ## 2.2 HTML 属性
 HTML属性的定义与描述。
 通过链接元素来练习HTML属性<a href="http://www.runoob.com">这是一个链接</a>
