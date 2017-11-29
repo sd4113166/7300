@@ -1,5 +1,5 @@
-# 1.4.1编辑器快捷键
-
+# 4 编辑器快捷键 和 Emment 快捷键
+## 4.1 编辑器快捷键
 - 基础编辑快捷键
 ![image](BasicEdit.jpg)
 - 搜索和替换
@@ -8,7 +8,7 @@
 ![image](Multi-cursor.jpg)
 
 
-## Emment 快捷键
+## 4.2 Emment 快捷键
 
 Emmet-前端开发神器
 Emmet是一款编辑器插件，支持多种编辑器支持。
@@ -225,7 +225,7 @@ a{click}+b{here} 和 a>{click}+b{here}
 
 [教程](http://wow.techbrood.com/tools/emmet/cs.html)
 
-# 作业 
+# 4.3 作业 
 - 练习 emment 能够熟练使用
 - 练习 编辑器快捷键
 Ctrl+Home Ctrl + End  Ctrl + Left Arrow(左移)
