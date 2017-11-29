@@ -18,7 +18,7 @@ CSS 以及实现其他的功能，极大的提高前端开发效率。
 [下载地址   http://emmet.io/download/](http://emmet.io/download/)
 
 
-# 4.3 作业 
+## 4.3 作业 
 - 练习 emment 能够熟练使用
 - 练习 编辑器快捷键
 Ctrl+Home Ctrl + End  Ctrl + Left Arrow(左移)
