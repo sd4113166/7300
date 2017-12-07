@@ -149,7 +149,7 @@ Ctrl+Tab Ctrl+H  Ctrl+F
 - 要求使用以下标签 \<p> \<hr> \<strong> \<h1> \<i>斜体  \<b>  \<sub>上标   \<sup>下标 并且在\<title>\</title>里填上自己的名字
 
 - 按照图片来完成（如果您能做出比这个要求更好的网页可以不按这个做)
-- ![image](第1课作业.jpg)
+  ![image](第1课作业.jpg)
   
 
 
