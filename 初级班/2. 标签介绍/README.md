@@ -1,17 +1,18 @@
 
 # 2.简单标签元素讲解 
 
+
 ## 2.1 HTML 元素简介
 
 - HTML 元素的语法 开始标签比如\<p>和结束标签比如\</p>
-- HTML 元素的嵌套  \<body>\<p>\</p>\<\body>
+- HTML 元素的嵌套  \<body>\<p>\</p>\</body>
 - HTML 空元素  \<p>\</p>
 - HTML 元素对大小写不敏感。\<p>\</p>  \<P>\</P>
 
 
 ## 2.2 HTML 属性
 HTML属性的定义与描述。
-通过链接元素来练习HTML属性<a href="http://www.runoob.com">这是一个链接</a>
+通过链接元素来练习HTML属性\<a href="http://www.runoob.com">这是一个链接</a>
 
 HTML 属性参考手册，了解常用的属性。
 
@@ -58,7 +59,10 @@ HTML 格式化标签都有哪些如下图：
 [教程地址](http://www.runoob.com/html/html-css.html#commentform)
 
 ## 2.8 HTML 图像
-
+- 怎样在vscode里安装服务器预览插件 preview-server 
+![image](preview-server.jpg),然后重启vscode
+打开网页 鼠标右键  preview-server:lanuch on browse
+或者是快捷键 ctrl+shift+l
 - 掌握 <img>标签中常用属性。如：设置图像的高度height、宽度width、源属性src
 [教程地址](http://www.runoob.com/html/html-images.html)
 
