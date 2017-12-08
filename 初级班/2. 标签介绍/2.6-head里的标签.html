@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<!--用meta设置字符集--> 
+<meta charset="utf-8">
+
+<!--定义标题用title--> 
+<title>文档标题</title>
+
+<!--<base> - 定义了所有链接的URL-->
+<!--使用 <base> 定义页面中所有链接默认的链接目标地址。-->
+<!--注意网络连接问题-->
+<base href="http://www.runoob.com/images/" target="_blank">
+
+<!--link 链接外部文件用  比如css（样式）文件-->
+
+<link rel="stylesheet" href="images/styles.css"/>
+<!-- style-->
+<style type="text/css">
+    h1 {color:red;}
+    p {color:blue;}
+</style>
+<!--script 定义脚本-->
+<script>
+        var str="hello world";      
+        document.write(str);
+        alert("hello world!")
+     
+</script>
+</head>
+ 
+<body>
+
+    <img src="images/chrome.gif" alt=""> 
+<!--base -->       
+<p><img src="logo.png" > 注意这里我们设置了图片的相对地址。能正常显示是因为我们在 head 部分设置了 base 标签，该标签指定了页面上所有链接的默认 URL，所以该图片的访问地址为 "http://www.runoob.com/images/logo.png"</p>        
+<p><a href="http://www.runoob.com/">runoob.com</a> 注意这个链接会在新窗口打开，即便它没有 target="_blank" 属性。因为在 base 标签里我们已经设置了 target 属性的值为 "_blank"。</p>
+
+<!--link-->
+<p>hello 我是用外部css样式文件改变的</p>
+
+</body>
+ 
+</html>
