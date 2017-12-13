@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>W3Cschool教程(w3cschool.cn)</title>
+</head>
+
+<body>
+
+    <!--
+   
+    表格由<table>标签来定义。每个表格均有若干行（由<tr> 标签定义）
+  
+    每行被分割为若干单元格（由<td>标签定义）。字母 td 指表格数据（table data），
+    即数据单元格的内容。数据单元格可以包含文本、图片、列表、段落、表单、水平线、表格等等。
+    HTML 表格的基本结构：
+      <table>…</table>：定义表格
+      <thead> 标签定义了一组HTML表格的头
+      <tbody> 标签组合了一个或者多个 <tr> 元素作为 <table> 元素的主体内容
+      <tfoot> 标签表示HTML表格的页脚，该标签用于组合HTML表格中的表注内容。
+      <th>…</th>：定义表格的标题栏（文字加粗）
+      <tr>…</tr>：定义表格的行
+      <td>…</td>：定义表格的列
+    -->
+
+
+   <!--完整的表格构成-->
+   <h1>1.完整的表格构成</h1>
+   <table border="1">
+        <caption>Monthly savings</caption>
+        <thead>
+          <tr>
+            <th>Month</th>
+            <th>Savings</th>
+          </tr>
+        </thead>
+       
+        <tbody>
+          <tr>
+            <td>January</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>February</td>
+            <td>$80</td>
+          </tr>
+        </tbody>
+
+        <tfoot>
+                <tr>
+                  <td>Sum</td>
+                  <td>$180</td>
+                </tr>
+              </tfoot>
+      </table>
+
+
+      <h1  contenteditable="true">2. colgroup 和 col 标签</h1>
+<!--<colgroup> 和 <col> 标签为表格中的三个列设置了背景色：-->
+    <!-- contenteditable="true" 可编辑属性 -->
+      <table border="1">
+            <colgroup>
+              <col span="2" style="background-color:red">
+              <col style="background-color:yellow">
+            </colgroup>
+            <tr>
+              <th>ISBN</th>
+              <th>Title</th>
+              <th>Price</th>
+            </tr>
+            <tr>
+              <td>3476896</td>
+              <td>My first HTML</td>
+              <td>$53</td>
+            </tr>
+          </table>
+
+
+
+
+   
+</body>
+
+</html>

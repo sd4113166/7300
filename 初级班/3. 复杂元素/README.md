@@ -66,12 +66,7 @@ height 和 width 属性用来定义iframe标签
 的高度与宽度。
 属性默认以像素为单位, 但是你可以指
 定其按比例显示 (如："80%")。
-##  Iframe - 移除边框
-frameborder 属性用于定义iframe表示是否显示边框。
-设置属性值为 "0" 移除iframe的边框
-使用iframe来显示目标链接页面
-iframe可以显示一个目标链接的页面
-目标链接的属性必须使用iframe的属性
+
 [教程](http://www.runoob.com/html/html-iframes.html)
 ## 3.7 HTML 颜色
 HTML 颜色由红色、绿色、蓝色混合而成。
@@ -102,4 +97,5 @@ HTML 中的预留字符必须被替换为字符实体。
 [教程](http://www.runoob.com/html/html-entities.html)
 
 ## 3.9 作业 
-制作浑河堡教会小组报告表。
+- 制作浑河堡教会小组报告表。
+- 复习内容在 [速查手册](http://www.runoob.com/html/html-quicklist.html)中

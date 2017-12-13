@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<!--<link rel="stylesheet" type="text/css" href="../css/weather.css"/>-->
+		<style>
+			body{
+				margin: 0;
+			}
+			th,td{
+				padding: 0;
+			}
+			table,th,td{
+				border: 2px solid #bdcce6;
+			}
+			#box{
+				width:800px ;
+				height: 200px;
+				margin: 0px auto;
+			}
+			table{
+				border-collapse: collapse;
+			}
+			table th{
+				width: 114px;
+				height: 36px;
+				background-color: #dbe3fa;
+				font : 18px "宋体";
+				color: #000;
+			}
+			tbody td{
+				height: 34px;
+				text-align: center;
+				font : 16px "宋体";
+			}
+			tbody .nate{
+				width: 115px;
+			}
+			tbody .day{
+				width: 92px;
+			}
+			tbody .pic{
+				width: 76px;
+				background: url(../img/pic.png) no-repeat 21px 4px;
+				text-indent: -9999px;
+			}
+			tbody .hot{
+				width: 139px;
+			}
+			tbody .color{
+				color: #ed7d4c;
+			}
+			tbody .blue{
+				color: #000055;
+			}
+			.null{
+				height: 4px;
+			}
+		</style>
+	</head>
+	<body>
+		<section id="box">
+			<table>
+				<thead>
+					<th colspan="2">日期</th>
+					<!--<th>天气现象</th>-->
+					<th colspan="2">天气现象</th>
+					<!--<th>天气现象</th>-->
+					<th>气温</th>
+					<th>风向</th>
+					<th>风力</th>
+				</thead>
+				<tbody>
+					<tr>
+						<td rowspan="2" class="nate">22日星期五</td>
+						<td class="day">白天</td>
+						<td class="pic">图片</td>
+						<td class="hot">晴间多云</td>
+						<td class="color">高温7℃</td>
+						<td>无持续风向</td>
+						<td>微风</td>
+					</tr>
+					<tr>
+						<!--<td>22日星期五</td>-->
+						<td>夜间</td>
+						<td>图片</td>
+						<td>晴</td>
+						<td class="blue">低温-4℃</td>
+						<td>无持续风向</td>
+						<td>微风</td>
+					</tr>
+					<tr class="null"></tr>
+					<tr>
+						<td rowspan="2" class="nate">22日星期五</td>
+						<td class="day">白天</td>
+						<td class="pic">图片</td>
+						<td class="hot">晴间多云</td>
+						<td class="color">高温7℃</td>
+						<td>无持续风向</td>
+						<td>微风</td>
+					</tr>
+					<tr>
+						<td>夜间</td>
+						<td>图片</td>
+						<td>晴</td>
+						<td class="blue">低温-4℃</td>
+						<td>无持续风向</td>
+						<td>微风</td>
+					</tr>
+				</tbody>
+			</table>
+		</section>
+	</body>
+</html>
