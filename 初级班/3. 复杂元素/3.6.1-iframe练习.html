@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Iframe</title>
+    <script src="http://apps.bdimg.com/libs/jquery/1.6.4/jquery.js"></script>
+</head>
+
+<body>
+
+
+    <div class="main">
+        <div class="menubox">
+            <div class="menu"></div>
+        </div>
+        <div class="content">
+            <div class="tab_menu"></div>
+            <div class="tab_body"></div>
+        </div>
+    </div>
+    <script>
+
+        $(function () {
+            var isInputText = false;
+            $("input[type='text'] ,textarea").focus(function () {
+                isInputText = true;
+            }).blur(function () {
+                isInputText = false;
+            })
+            document.onselectstart = function () {
+                return isInputText;
+            };
+        })
+
+
+        $(function () {
+            var menuData = [
+                { text: "游戏", id: "1", pid: "0", url: "" },
+                { text: "拼图", id: "101", pid: "1", url: "http://www.qdfuns.com/notes/48016/87b4198f5923c7c3e1907d722d2f2c7e.html" },
+                { text: "黑白棋初级", id: "102", pid: "1", url: "http://www.qdfuns.com/notes/48016/d9d81d46ecd90f3fb1d494f75accbfbc.html" },
+                { text: "熄灯大作战", id: "103", pid: "1", url: "http://www.qdfuns.com/notes/48016/f289b3184326a0aa9d05a1d5310c98fb.html" },
+                { text: "菜单测试", id: "3", pid: "0", url: "" },
+                { text: "二级菜单", id: "301", pid: "3", url: "" },
+                { text: "三级菜单", id: "30101", pid: "301", url: "" },
+                { text: "三级菜单", id: "30102", pid: "301", url: "" },
+                { text: "三级菜单", id: "30103", pid: "301", url: "" },
+                { text: "二级菜单", id: "302", pid: "3", url: "" },
+                { text: "三级菜单", id: "30201", pid: "302", url: "" },
+                { text: "三级菜单", id: "30202", pid: "302", url: "" },
+                { text: "常用网站", id: "2", pid: "0", url: "" },
+                { text: "教会灵修", id: "201", pid: "2", url: "http://www.hunhepu.org/qt" },
+                { text: "小组分享", id: "201", pid: "2", url: "http://www.faith.im/hhp" },
+            ];
+            getMenu(menuData)
+
+        })
+
+
+
+        function getMenu(menuData) {
+            var html = ''; var newData = menuData.filter(function (item) {
+                return item.pid === '0';
+            })
+            html = getTreeMenuHtml(menuData, newData, 1);
+            $(".menu").html(html);
+
+            $(".slideItem").click(function () {
+                if (!$(this).attr("alt")) return false;
+                showIframe($(this).find("span").html(), $(this).attr("alt"));
+            })
+            $(".item_lv1,.item_lv2 span").click(function () {
+                var obj = $(this).siblings(".slideItem");
+                $(this).parent().siblings().find(".slideItem").slideUp(150);
+                if (obj.is(":hidden")) {
+                    obj.slideDown(150);
+                } else {
+                    obj.slideUp(150);
+                }
+            })
+            $(".menu").find("[alt]").eq(0).click();
+
+            return false;
+        }
+
+        function getTreeMenuHtml(menuData, data, n) {
+            var html = '';
+            for (var i = 0; i < data.length; i++) {
+                if (n == 1) {
+                    html += '<div class="menulist"><div class="item_lv1">' + data[i].text + '</div>';
+                } else {
+                    var attr = '';
+                    if (data[i].url != "") attr = 'alt="' + data[i].url + '"';
+                    html += '<div class="item_lv' + n + ' slideItem" ' + attr + '><span>' + data[i].text + '</span>';
+                }
+                var newData = menuData.filter(function (item) {
+                    return item.pid === data[i].id;
+                })
+                html += getTreeMenuHtml(menuData, newData, n + 1);
+                html += '</div>';
+            }
+            return html;
+        }
+
+        function showIframe(title, url) {
+            if ($(".tab_menu_item[alt='" + url + "']").length > 0) {
+                $(".tab_menu_item[alt='" + url + "']").click();
+                return false;
+            }
+            var menuHtml = '<div class="tab_menu_item" alt="' + url + '">' + title + '<span></span></div>';
+            var iframeBoxHtml = '\
+			<div class="iframeBox" alt="' + url + '">\
+				<iframe frameborder="0" allowtransparency="true" height="100%" width="100%" src="' + url + '"></iframe>\
+			</div>';
+            $(".tab_menu").append($(menuHtml));
+            $(".tab_body").append($(iframeBoxHtml));
+            $(".tab_menu_item").unbind();
+            $(".tab_menu_item").click(function () {
+                var obj;
+                var itemLv2 = $(".item_lv2[alt='" + $(this).attr("alt") + "']");
+                var itemLv3 = $(".item_lv3[alt='" + $(this).attr("alt") + "']");
+                if (itemLv2.length == 0) {
+                    obj = itemLv3;
+                    itemLv2 = obj.parent(".item_lv2");
+                } else {
+                    obj = itemLv2;
+                }
+                var iframeBox = $(".iframeBox[alt='" + $(this).attr("alt") + "']");
+                $(".iframeBox").hide();
+                iframeBox.show();
+                $(".tab_menu_item").removeClass("active")
+                $(this).addClass("active");
+                $(".item_lv2,.item_lv3").removeClass("active")
+                obj.addClass("active");
+                itemLv2.addClass("active");
+                $(".item_lv1").removeClass("active1");
+                itemLv2.siblings(".item_lv1").addClass("active1");
+
+                if (obj.is(":hidden")) {
+                    if (itemLv2.is(":hidden")) itemLv2.siblings(".item_lv1").click();
+                    itemLv2.find("span").eq(0).click()
+                }
+
+            })
+            $(".tab_menu_item span").unbind();
+            $(".tab_menu_item span").click(function () {
+                if ($(this).parent().hasClass("active")) {
+                    $(this).parent().remove();
+                    $(".item_lv2").removeClass("active")
+                    $(".tab_menu_item").last().click();
+                } else {
+                    $(this).parent().remove();
+                }
+                $(".iframeBox[alt='" + $(this).parent().attr("alt") + "']").remove();
+
+            })
+            $(".tab_menu_item").last().click();
+            return false;
+        }
+    </script>
+
+    <style>
+        * {
+            font-family: 微软雅黑;
+            outline: none;
+            margin: 0px;
+            padding: 0px;
+            font-size: 12px;
+            color: #333;
+            outline: 0;
+            font-size: 12px;
+            vertical-align: baseline;
+            font-style: normal;
+            box-sizing: border-box;
+        }
+
+        body,
+        html {
+            position: relative;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        div {
+            position: relative;
+            z-index: 2;
+        }
+
+        img {
+            vertical-align: middle;
+        }
+
+        iframe {
+            border: none;
+            background: transparent;
+        }
+
+
+        body {
+            background: #eee;
+            background-image: linear-gradient(45deg, #bbb 25%, transparent 0),
+            linear-gradient(45deg, transparent 75%, #bbb 0),
+            linear-gradient(45deg, #bbb 25%, transparent 0),
+            linear-gradient(45deg, transparent 75%, #bbb 0);
+            background-size: 30px 30px;
+            background-position: 0 0, 15px 15px, 15px 15px, 30px 30px;
+        }
+
+
+
+
+        .main {
+            position: absolute;
+            width: 100%;
+            bottom: 0px;
+            top: 0px;
+            overflow: hidden;
+            background: rgba(55, 55, 55, 0.5);
+        }
+
+        .main .menubox {
+            position: absolute;
+            width: 180px;
+            ;
+            bottom: 0px;
+            top: 0px;
+            left: 0px;
+            overflow: hidden;
+        }
+
+        .menubox .menu {
+            width: 280px;
+            overflow-y: auto;
+            background: rgba(55, 55, 55, 0.2);
+            height: 100%;
+        }
+
+        .menu .menulist {
+            width: 180px;
+        }
+
+        .menulist .item_lv1 {
+            margin-top: 5px;
+            cursor: pointer;
+            line-height: 40px;
+            padding-left: 40px;
+            color: white;
+            font-weight: bold;
+            background: rgba(55, 55, 55, 0.3);
+            text-shadow: 1px 1px 1px #333
+        }
+
+        .menulist:nth-of-type(1) .item_lv1 {
+            margin-top: 0px;
+        }
+
+        .menulist .item_lv1:hover,
+        .menulist .active1 {
+            background: rgba(55, 55, 55, 0.7);
+        }
+
+        .menulist .item_lv2 {
+            display: none;
+            padding-left: 50px;
+            background: url(//cdn.attach.qdfuns.com/notes/pics/201712/12/132535rgffpnmmeke2r1rj.png) no-repeat 35px 10px;
+        }
+
+        .menulist .item_lv2>span {
+            line-height: 30px;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            display: block;
+        }
+
+        .menulist .item_lv2:hover,
+        .menulist>.active {
+            background-image: url(//cdn.attach.qdfuns.com/notes/pics/201712/12/132535heb9nzb3c65ssb9s.png);
+        }
+
+        .menulist .item_lv2:hover>span,
+        .menulist .active>span {
+            color: #ffcb5d;
+        }
+
+        .item_lv2 .item_lv3 {
+            display: none;
+            padding-left: 5px;
+        }
+
+        .item_lv2 .item_lv3 span {
+            line-height: 22px;
+            color: white;
+            font-weight: normal;
+            cursor: pointer;
+        }
+
+        .item_lv2 .item_lv3:hover span,
+        .item_lv2 .active span {
+            color: #ffcb5d;
+        }
+
+
+        .content {
+            position: absolute;
+            bottom: 20px;
+            top: 20px;
+            left: 200px;
+            right: 20px;
+            overflow: hidden;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+
+        .content .tab_menu {
+            height: 40px;
+            background: rgba(0, 0, 0, 0.3);
+        }
+
+        .content .tab_menu .tab_menu_item {
+            position: relative;
+            cursor: default;
+            height: 40px;
+            background: #ccc;
+            color: #226db0;
+            line-height: 40px;
+            border-radius: 5px 5px 0 0;
+            float: left;
+            padding: 0 30px;
+            font-size: 16px;
+            font-weight: bold;
+            margin-right: 5px;
+        }
+
+        .content .tab_menu .tab_menu_item span {
+            display: none;
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background: rgba(155, 0, 0, 0.4);
+            right: 3px;
+            top: 3px;
+            border-radius: 50%;
+            cursor: pointer
+        }
+
+        .content .tab_menu .tab_menu_item:hover span {
+            display: block;
+        }
+
+        .content .tab_menu .tab_menu_item span:hover {
+            background: rgba(155, 0, 0, 0.6);
+        }
+
+        .content .tab_menu .active {
+            background: white;
+        }
+
+        .content .tab_body {
+            position: absolute;
+            bottom: 0;
+            top: 40px;
+            left: 0;
+            right: 0;
+            background: white;
+        }
+
+        .content .tab_body .iframeBox {
+            position: absolute;
+            bottom: 0;
+            top: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</body>
+
+</html>

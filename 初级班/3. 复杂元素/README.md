@@ -98,4 +98,5 @@ HTML 中的预留字符必须被替换为字符实体。
 
 ## 3.9 作业 
 - 制作浑河堡教会小组报告表。
+  ![image](table1.jpg)
 - 复习内容在 [速查手册](http://www.runoob.com/html/html-quicklist.html)中
