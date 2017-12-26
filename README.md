@@ -121,6 +121,4 @@
 
 若您有建议或疑问，[请戳这里给我们留言](https://github.com/ElijahLabs/7300/issues)，或者发送邮件到[labs@elijah.com.cn](mailto:labs@elijah.com.cn)
 
-以马内利。：）
-
 [dyh](https://github.com/dyh)
