@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+        body,
+        h3,
+        dl,
+        dd {
+            margin: 0
+        }
+        
+        a {
+            text-decoration: none;
+            /*去掉下划线*/
+            color: #003399;
+        }
+        
+        img {
+            vertical-align: top;
+            /*垂直居上*/
+            border: none;
+        }
+        
+        input {
+            padding: 0;
+            /*内边距为0*/
+        }
+        
+        .fl {
+            float: left;
+            /*向左浮动*/
+        }
+        
+        .fr {
+            float: right;
+            /*向右浮动*/
+        }
+        
+        .clearfix:after {
+            /*清除浮动 元素的内容之后插入新内容*/
+            content: "";
+            display: block;
+            clear: both;
+        }
+        
+        #box {
+            width: 960px;
+            height: 688px;
+            padding: 30px 11px 0;
+            background-color: #f9f9f9;
+            margin: 10px auto;
+        }
+        
+        #box .head {
+            height: 26px;
+            margin-bottom: 25px;
+            /*底部外边距*/
+        }
+        
+        #box .head .head-left {
+            border-right: 1px solid #ccc;
+        }
+        
+        #box .head-left .mail163,
+        #box .head-left .mail126,
+        #box .head-left .mailyeah {
+            height: 26px;
+            margin-right: 21px;
+            text-indent: -9999px;
+        }
+        
+        #box .head-left .mail163 {
+            width: 107px;
+        }
+        
+        #box .head-left .mail126 {
+            width: 108px;
+        }
+        
+        #box .head-left .mailyeah {
+            width: 115px;
+        }
+        
+        #box .head .head-mid {
+            margin: 1px 0 0 12px;
+            font: 20px/20px "宋体";
+            color: #696968;
+        }
+        
+        #box .head .head-right {
+            font: 12px/12px "宋体";
+            margin: 8px 3px 0 0
+        }
+        
+        #box .head-right .more {
+            padding-right: 6px;
+            margin-right: 8px;
+            border-right: 1px solid #003399;
+        }
+        
+        #box .content .content-top {
+            width: 958px;
+            height: 36px;
+            background-color: #6d9ed1;
+            border: 1px solid #5b88b8;
+            color: #FFFFFF;
+            font: 14px/37px "宋体";
+            text-indent: 20px;
+        }
+        
+        #box .content .content-bottom {
+            width: 958px;
+            height: 547px;
+            border: 1px solid #ccc;
+            border-top: none;
+        }
+        
+        #box .content-bottom .left {
+            width: 642px;
+            height: 547px;
+            background-color: #fff;
+            font-family: arial, "宋体";
+            font-size: 12px;
+        }
+        
+        #box .left .login {
+            margin: 50px 0 34px 145px;
+        }
+        
+        #box .login .login-letter,
+        #box .login .login-phone {
+            width: 166px;
+            font: 14px/32px "宋体";
+            text-align: center;
+        }
+        
+        #box .login .login-letter {
+            border: 1px solid #004a94;
+            margin-right: -1px;
+            position: relative;
+            z-index: 1;
+            color: #fff;
+        }
+        
+        #box .login .login-phone {
+            border: 1px solid #b5b5b5;
+            color: #555;
+        }
+        
+        #box .left .e-mail {
+            margin-bottom: 12px;
+        }
+        
+        #box .left .pt10 {
+            padding-top: 10px
+        }
+        
+        #box .left .mt11 {
+            margin-top: 11px
+        }
+        
+        #box .left .mb7 {
+            margin-bottom: 7px
+        }
+        
+        #box .e-mail .color1 {
+            color: #d00000;
+        }
+        
+        #box .e-mail .color2 {
+            color: #999999;
+        }
+        
+        #box .e-mail .e-mail-left {
+            width: 135px;
+            height: 27px;
+            font: 14px/27px "宋体";
+            text-align: right;
+            margin-right: 10px;
+        }
+        
+        #box .e-mail .e-mail-right {
+            width: 497px;
+            position: relative;
+        }
+        
+        #box .e-mail-right .w210 {
+            width: 210px;
+        }
+        
+        #box .e-mail-right .w332 {
+            width: 332px;
+        }
+        
+        #box .e-mail-right .w206 {
+            width: 206px;
+        }
+        
+        #box .e-mail-right .mail-text {
+            height: 25px;
+            border: 1px solid #b5b5b5;
+        }
+        
+        #box .e-mail-right .mail-menu {
+            width: 100px;
+            height: 27px;
+            border: 1px solid #b5b5b5;
+        }
+        
+        #box .e-mail .req {
+            font: 12px/34px "宋体";
+            color: #999;
+        }
+        
+        #box .e-mail-right .align {
+            vertical-align: middle;
+        }
+        
+        #box .e-mail-right .code {
+            width: 122px;
+            height: 83px;
+            position: absolute;
+            left: 212px;
+            top: -12px;
+        }
+        
+        #box .code .code-img {
+            width: 120px;
+            height: 50px;
+            border: 1px solid #e7e7e7;
+            vertical-align: top;
+        }
+        
+        #box .code .code-text {
+            width: 122px;
+            font: 12px/30px "宋体";
+            text-align: center;
+        }
+        
+        #box .e-mail .reg-text {
+            width: 119px;
+            height: 37px;
+            background-color: #4eaa38;
+            border: 1px solid #35971e;
+            font: 14px/35px "宋体";
+            color: #FFFFFF;
+        }
+        
+        #box .content-bottom .right {
+            width: 315px;
+            height: 547px;
+            border-left: 1px solid #e0e0e0;
+            vertical-align: top;
+        }
+        
+        #box .foot {
+            width: 960px;
+            margin-top: 15px;
+            font: 12px/12px "宋体";
+            text-align: center;
+        }
+        
+        #box .foot .foot-left {
+            margin-right: 2px;
+        }
+        
+        #box .foot .br {
+            border-right: 1px solid #999999;
+        }
+        
+        #box .foot .pr {
+            padding-right: 4px;
+        }
+        
+        #box .foot-left,
+        #box .foot-right {
+            color: #999999;
+        }
+        
+        #box .foot-right {
+            margin-left: 8px;
+        }
+    </style>
+</head>
+
+<body>
+    <section id="box">
+        <!--<section> 标签定义文档中的节（section、区段）。比如章节、页眉、页脚或文档中的其他部分。-->
+        <header class="head">
+            <!--    <header> 标签定义文档的页眉（介绍信息）。-->
+            <div class="head-left fl">
+                <a href="" class="mail163 fl">
+						163邮箱
+					</a>
+                <a href="" class="mail126 fl">
+						126邮箱
+					</a>
+                <a href="" class="mailyeah fl">
+						yeah邮箱
+					</a>
+            </div>
+            <h3 class="head-mid fl">
+                中国第一大电子邮件服务商
+            </h3>
+            <div class="head-right fr">
+                <a href="" class="more fl">
+						了解更多
+					</a>
+                <a href="" class="idea fl">
+						反馈意见
+					</a>
+            </div>
+        </header>
+        <div class="content">
+
+            <div class="content-top">
+                欢迎注册网易免费邮！邮件地址可以作为网易通行证，使用其他网易产品。
+            </div>
+            <div class="content-bottom">
+                <div class="left fl">
+
+                    <form action="">
+                        <br>
+                        <dl class="e-mail clearfix">
+                            <dt class="e-mail-left fl">
+									<span class="color1">*</span>
+									<label class="" for="address">
+										邮件地址
+									</label>
+								</dt>
+                            <dd class="e-mail-right fl">
+                                <input class="mail-text w210" type="text" name="" id="address" value="" />
+                                <span class="color2">
+										@
+									</span>
+                                <select class="mail-menu" name="">
+										<option value="">163.com</option>
+										<option value="">126.com</option>
+										<option value="">yeah.net</option>
+									</select>
+                                <div class="req">
+                                    6~18个字符，可以使用字母、数字、下划线，需要字母开头
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="e-mail clearfix">
+                            <dt class="e-mail-left fl">
+									<span class="color1">*</span>
+									<label class="" for="pw">
+									密码
+									</label>
+								</dt>
+                            <dd class="e-mail-right fl">
+                                <input class="mail-text w332" type="text" name="" id="pw" value="" />
+                                <div class="req">
+                                    6~16个字符，区分大小写
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="e-mail clearfix">
+                            <dt class="e-mail-left fl">
+									<span class="color1">*</span>
+									<label class="" for="con">
+										确认密码
+									</label>
+								</dt>
+                            <dd class="e-mail-right fl">
+                                <input class="mail-text w332" type="text" name="" id="con" value="" />
+                                <div class="req">
+                                    请再次填写密码
+                                </div>
+                            </dd>
+                        </dl>
+                        <dl class="e-mail clearfix pt10">
+                            <dt class="e-mail-left fl">
+									<span class="color1">*</span>
+									<label class="" for="ver">
+										验证码
+									</label>
+								</dt>
+                            <dd class="e-mail-right fl">
+                                <input class="mail-text w206" type="text" name="" id="" value="" />
+                                <div class="req mt11">
+                                    请填写图片中的字符，不区分大小写
+                                </div>
+                                <div class="code">
+                                    <div class="code-img">
+                                        <img src="img/2/img-code.png" />
+                                    </div>
+                                    <div class="code-text">
+                                        <a href="">
+								    			看不清楚？换张图片
+								    		</a>
+                                    </div>
+                                </div>
+                            </dd>
+
+                        </dl>
+                        <dl class="e-mail clearfix mb7">
+                            <dt class="e-mail-left fl">
+								</dt>
+                            <dd class="e-mail-right fl">
+                                <input class="align" type="checkbox" name="" id="" value="" /> 同意
+                                <a href="" class="">
+										“服务条款”
+									</a> 和
+                                <a href="" class="">
+										“隐私权相关政策”
+									</a>
+                            </dd>
+                        </dl>
+                        <dl class="e-mail clearfix">
+                            <dt class="e-mail-left fl">
+								</dt>
+                            <dd class="e-mail-right fl">
+                                <input class="reg-text" type="submit" name="" id="" value="立即注册" />
+                            </dd>
+                        </dl>
+                    </form>
+                </div>
+                <div class="right fl">
+                    <img src="img/2/try.png" />
+                </div>
+            </div>
+        </div>
+        <footer class="foot">
+            <!--<div class="foot-left fl">-->
+            <!--footer固定在底部-->
+            <a href="" class="foot-left">
+						关于网易
+					</a>
+            <a href="" class="foot-left">
+						关于网易免费邮
+					</a>
+            <a href="" class="foot-left">
+						邮箱官方博客
+					</a>
+            <a href="" class="foot-left">
+						客户服务
+					</a>
+            <a href="" class="foot-left br pr">
+						隐私政策
+					</a>
+            <span class="foot-right">
+						网易公司版权所有◎1997-2013
+					</span>
+        </footer>
+    </section>
+</body>
+
+</html>

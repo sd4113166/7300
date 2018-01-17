@@ -1,0 +1,36 @@
+h1 {
+    color: coral;
+}
+
+
+/* element selector end*/
+
+#red {
+    color: red;
+}
+
+#green {
+    color: green;
+}
+
+#sidebar p {
+    color: pink;
+}
+
+
+/* ----id selector end---*/
+
+.center {
+    text-align: center;
+    color: blueviolet
+}
+
+
+/*类选择器  end*/
+
+a[target] {
+    background-color: yellow;
+}
+
+
+/*属性选择器  end*/

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS垂直水平居中</title>
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .title {
+            margin: 35px;
+            font-size: 24px;
+            margin-top: 35px;
+            margin-bottom: 5px;
+            line-height: 35px;
+        }
+        /* text */
+        
+        .demo00 {
+            margin: 1.25rem;
+            width: 12.5rem;
+            height: 2.25rem;
+            text-align: center;
+            border: 1px dashed #f0d;
+            line-height: 2.25rem;
+        }
+        
+        .demo01-wraper,
+        .demo02-wraper,
+        .demo03-wraper,
+        .demo04-wraper,
+        .demo05-wraper {
+            margin: 35px;
+            height: 500px;
+            width: 500px;
+            background-color: pink;
+        }
+        
+        .demo01-inner,
+        .demo02-inner,
+        .demo03-inner,
+        .demo04-inner,
+        .demo05-inner {
+            height: 200px;
+            width: 400px;
+            background-color: gray;
+        }
+        /* textAlign + lineHeight */
+        
+        .demo01-wraper {
+            text-align: center;
+            line-height: 500px;
+        }
+        
+        .demo01-inner {
+            display: inline-block;
+            line-height: 200px;
+        }
+        /* textAlign + verticalAlign */
+        
+        .demo02-wraper {
+            display: table-cell;
+            text-align: center;
+            vertical-align: middle;
+        }
+        
+        .demo02-inner {
+            display: inline-block;
+        }
+        /* position:absolute; */
+        
+        .demo03-wraper {
+            position: relative;
+        }
+        
+        .demo03-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -100px;
+            margin-left: -200px;
+        }
+        /* transform */
+        
+        .demo04-wraper {
+            position: relative;
+        }
+        
+        .demo04-inner {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        /* transform */
+        
+        .demo05-wraper {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+</head>
+
+
+<body>
+    <!-- 00 -->
+    <h2 class="title">单行文本元素垂直居中显示</h2>
+    <div class="demo00">
+        测试单行文本垂直居中显示
+    </div>
+    <!-- 01 -->
+    <h2 class="title">text-align：center + line-height</h2>
+    <div class="demo01-wraper">
+        <div class="demo01-inner">HI,我就是DEMO01</div>
+    </div>
+    <!-- 02 -->
+    <h2 class="title">text-align：center + vertical-align:middle</h2>
+    <div class="demo02-wraper">
+        <div class="demo02-inner">HI,我就是DEMO02</div>
+    </div>
+    <!-- 03 -->
+    <h2 class="title">position:absolute</h2>
+    <div class="demo03-wraper">
+        <div class="demo03-inner">HI,我就是DEMO03</div>
+    </div>
+    <!-- 04 -->
+    <h2 class="title">transform</h2>
+    <div class="demo04-wraper">
+        <div class="demo04-inner">
+            HI,我就是DEMO04
+        </div>
+    </div>
+    <!-- 05 -->
+    <h2 class="title">Flex</h2>
+    <div class="demo05-wraper">
+        <div class="demo05-inner">
+            HI,我就是DEMO05
+        </div>
+    </div>
+</body>
+
+</html>
