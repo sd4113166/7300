@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        #sidebar p {
+            color: #666;
+        }
+        /* 下面这两个选择器有何不同呢*/
+        
+        .fancy p {
+            color: #f60;
+            background: #666;
+        }
+        
+        p .fancy {
+            color: #f60;
+            background: #666;
+        }
+    </style>
+</head>
+
+<body>
+    <!--id 后代选择器
+    在现代布局中，id 选择器常常用于建立派生选择器。
+    ======-->
+    <div id="sidebar">
+        <p>我与派生选择器有关 #sidebar p这个选择器给我设置了样式颜色为粉色</p>
+        <div>派生选择与我没有一点点关系</div>
+    </div>
+
+
+    <!--======== class后代选择器=========-->
+    <div class="fancy">
+        <p>
+            .fancy派生类与我有关系
+        </p>
+    </div>
+
+</body>
+
+</html>
