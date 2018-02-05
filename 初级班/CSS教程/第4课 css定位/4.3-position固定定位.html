@@ -1,26 +1,35 @@
+<!doctype html>
 <html>
-
 <head>
-    <style type="text/css">
-        p.one {
-            position: fixed;
-            left: 5px;
-            top: 5px;
-        }
-        
-        p.two {
-            position: fixed;
-            top: 30px;
-            right: 5px;
-        }
-    </style>
-</head>
-
-<body>
-
-    <p class="one">一些文本。</p>
-    <p class="two">更多的文本。</p>
-
-</body>
-
+<meta charset="utf-8">
+<meta name="author" content="http://www.softwhy.com/" />
+<title>蚂蚁部落</title>
+<style type="text/css">
+body {
+  margin:0px;
+  padding:0px;
+  height:1500px;
+}
+.ant-absolute{ 
+  width:100px; 
+  height:100px; 
+  background-color:#0094ff; 
+  position:absolute;
+  left:50px;
+  top:30px;
+} 
+.ant-fixed{ 
+  width:100px; 
+  height:100px; 
+  background-color:#0094ff; 
+  position:fixed;
+  right:50px;
+  top:30px;
+}  
+</style> 
+</head> 
+<body> 
+<div class="ant-absolute"></div> 
+<div class="ant-fixed"></div>
+</body> 
 </html>
