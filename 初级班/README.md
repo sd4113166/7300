@@ -71,7 +71,7 @@
     
 ## CSS 教程
      
-## [1.CSS 导读与简介](CSS教程/1.%20css基础教程)
+## [1.CSS 基础教程](CSS教程/1.%20css基础教程)
 
 1.1 CSS 教程导读
 
@@ -131,7 +131,7 @@
 
 3.7 padding填充
 
-3.8 CSS Display(显示)与Visibility(可见性)
+3.8 CSS Display(显示)与Visibility
 
 
 ## Javascript教程
