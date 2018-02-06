@@ -115,7 +115,7 @@
 
 2.10 CSS 尺寸 (Dimension)
      
-## [3.盒子模型](CSS教程/3.盒子模型)
+## [3.盒子模型](CSS教程/3.css盒子模型)
  
 3.1 盒子模型实例
 
@@ -132,6 +132,8 @@
 3.7 padding填充
 
 3.8 CSS Display(显示)与Visibility
+
+## [4.css定位](CSS教程/4.css定位)
 
 
 ## Javascript教程
