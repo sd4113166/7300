@@ -63,7 +63,7 @@ Stream类、NetworkStream类、FileStream类、MemoryStream类和GZipStream类
 
 - 文本读写器
     + TextReader类
-    + TextWrite类
+    + TextWriter类
 - 字符串读写器
     + StringReader类
     + StringWriter类
