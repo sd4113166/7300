@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+var carname1="Bill Gates";
+var carname2='Bill Gates';
+var answer1="Nice to meet you!";
+var answer2="He is called 'Bill'";
+var answer3='He is called "Bill"';
+
+document.write(carname1 + "<br>")
+document.write(carname2 + "<br>")
+document.write(answer1 + "<br>")
+document.write(answer2 + "<br>")
+document.write(answer3 + "<br>")
+/* 字符串 end */
+document.write( "---------------------------<br>")
+var x1=36.00;
+var x2=36;
+var y=123e5;
+var z=123e-5;
+
+document.write(x1 + "<br />")
+document.write(x2 + "<br />")
+document.write(y + "<br />")
+document.write(z + "<br />")
+/* 数字 end */
+document.write( "---------------------------<br>")
+var xb=true
+var yb=false
+document.write(xb + "<br />")
+document.write(yb + "<br />")
+/* 布尔型 end*/
+document.write( "---------------------------<br>")
+var i;
+var cars = new Array();
+cars[0] = "Audi";
+cars[1] = "BMW";
+cars[2] = "Volvo";
+
+for (i=0;i<cars.length;i++)
+{
+document.write(cars[i] + "<br>");
+}
+/* 数组 end*/
+document.write( "---------------------------<br>")
+var person={
+firstname : "Bill",
+lastname  : "Gates",
+id        :  5566
+};
+document.write(person.lastname + "<br />");
+document.write(person["lastname"] + "<br />");
+/* 对象 end*/
+document.write( "---------------------------<br>")
+var person;//变量不含有值
+var car="Volvo";
+document.write(person + "<br />");
+document.write(car + "<br />");
+var car=null;//清除变量
+document.write(car + "<br />");
+/* null和undefined */
+document.write( "---------------------------<br>")
+</script>
+
+</body>
+</html>

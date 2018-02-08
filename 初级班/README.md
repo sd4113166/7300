@@ -138,31 +138,56 @@
 
 ## Javascript教程
 
-##  1.JavaScript基础
+##  1.JavaScript介绍
 
-1.1 JavaScript 教程导读
+1.1 JavaScript简介
 
-1.2 JavaScript 简介
+1.2 JavaScript 用法
 
-1.3 JavaScript 用法
+1.3 语句
 
-1.4 JavaScript 输出
+1.4 代码块
 
-1.5 JavaScript 语法
+1.5 JavaScript 注释
 
-1.6 JavaScript 语句
 
-1.7 JavaScript 注释
+## 2.JavaScript基础
 
-1.8 JavaScript 变量
+2.1 JavaScript 变量
 
-1.9 JavaScript 数据类型
+2.2 JavaScript 数据类型
 
-1.10 JavaScript 函数
+2.3 声明变量类型
 
-1.11 JavaScript 作用域
+2.4 属性和方法
 
-1.12 JavaScript 事件
+2.5 JavaScript 中的对象
+
+2.6 函数
+
+2.7 JavaScript 运算符
+
+2.8 JavaScript 事件
+
+2.9 比较运算符
+
+2.10 逻辑运算符
+
+2.11 条件运算符
+
+2.12 JavaScript If...Else 语句
+
+2.13 switch
+
+2.14 JavaScript for 循环
+
+2.15 JavaScript while 循环
+
+2.16 JavaScript Break 和 Continue 语句
+
+2.17 类型转换
+
+2.18 typeof 操作符
 
 ##  2.阶段总结
 

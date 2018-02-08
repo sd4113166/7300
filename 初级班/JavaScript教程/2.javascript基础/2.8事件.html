@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>demo1 在以下实例中，按钮元素中添加了 onclick 属性 (并加上代码):</h1>   
+        <button onclick="getElementById('demo').innerHTML=Date()">现在的时间是?</button>
+        <p id="demo"></p>
+        <h1>demo2 在下一个实例中，代码将修改自身元素的内容 (使用 this.innerHTML):</h1>
+        <button onclick="this.innerHTML=Date()">现在的时间是?</button>
+        <h1>demo3 调用函数</h1>
+        <p>点击按钮执行 <em>displayDate()</em> 函数.</p>
+        <p id="demo3"></p>
+<button onclick="displayDate()">点这里</button>
+<script>
+function displayDate(){
+	document.getElementById("demo3").innerHTML=Date();
+}
+</script>
+<p id="demo"></p>
+</body>
+</html>

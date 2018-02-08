@@ -1,0 +1,67 @@
+<html>
+<head>
+<script type="text/javascript">
+
+
+function check(obj)
+  {
+    console.log(obj.id)
+  if(obj.id=="male")
+  {
+    male.checked = true;
+    female.checked = false;
+    console.log("你是"+obj.id)
+  }
+  else
+  {
+    male.checked = false;
+    female.checked = true;
+    console.log("你是"+obj.id)
+  }
+  
+  
+  }
+
+
+  function together(){
+
+var radios = document.getElementsByName("a");
+
+for ( var i = 0; i < radios.length; i++) {
+
+if (radios[i].checked==true) {
+
+    i++;
+
+ console.log("你选中的是第"+i+"个单选框。值为："+radios[--i].value+"   ------  "+radios[i].id);
+ if(radios[i].id=="male")
+ {
+     console.log("可以在一起")
+ }
+ else{
+    console.log("不可以在一起，因为基督徒姐妹只能找基督徒弟兄")
+ }
+
+ }
+}
+
+}
+
+
+</script>
+</head>
+<body>
+<h1>教会中某位剩斗士（女性）征婚条件：
+</h1>
+
+<p>
+    <label for="input">请选择姓别</label>
+     弟兄<input type="radio" id="male" name="a" onclick="check(this)" value="弟兄" />
+     姐妹<input type="radio" id="female" name="a" onclick="check(this)" value="姐妹"/>
+</p>
+
+<input type="button" value="是否在一起" onclick="together()">
+
+
+</body>
+</html>
