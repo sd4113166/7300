@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>W3Cschool教程(w3cschool.cn)</title> 
+<style>
+    .test{color:blue; }
+</style>
+<script src="//libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $(".test").hide();
+    $("#result").text("花姐姐没来！听说花姐姐去.......")
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>今天上课，队伍里谁没来？</h2>
+  <p id="xiaofang">小芳</p>
+  <p id="xiaoyu">小宇</p>
+  <p id="huajie" class="test">花姐姐</p>
+  <p id="xiaonan">小楠</p>
+  <p id="juege">军哥</p>
+  <p id="chaoge">超哥</p>
+  <p id="chaojie">超姐</p>
+  <p id="haohao">昊昊</p>
+  <button>点我</button>
+  <div id="result"></div>
+</body>
+</html>
