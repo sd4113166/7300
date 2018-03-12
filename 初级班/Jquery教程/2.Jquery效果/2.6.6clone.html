@@ -1,0 +1,27 @@
+<html>
+<head>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+  $("button").click(function(){
+    $("body").append($("p:first").clone(true));
+  });
+  $("p").click(function(){
+    $(this).animate({fontSize:"+=1px"});
+  });
+});
+</script>
+</head>
+<body>
+<!-- clone() 方法生成被选元素的副本，包含子节点、文本和属性。
+语法
+$(selector).clone(includeEvents)
+参数	描述
+includeEvents	
+可选。布尔值。规定是否复制元素的所有事件处理。
+默认地，副本中不包含事件处理器。 -->
+<p>点击本段落可以增加文本的大小。事件处理器同样被复制到新的段落。</p>
+<button>复制每个 p 元素，然后追加到 body 元素</button>
+
+</body>
+</html>

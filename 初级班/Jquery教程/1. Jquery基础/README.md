@@ -82,10 +82,11 @@ jQuery 语法是通过选取 HTML 元素，并对选取的元素执行某些操�
 \#id 选择器
 - jQuery #id 选择器通过 HTML 元素的 id 属性选取指定的元素。
 - 页面中元素的 id 应该是唯一的，所以您要在页面中选取唯一的元素需要通过 #id 选择器。
-通过 id 选取元素语法如下：$("#test")
-    $(document).ready(function(){ 
-      $("button").click(function(){ 
-        $("#test").hide(); 
+通过 id 选取元素语法如下：
+
+    \$(document).ready(function(){ 
+     \$("button").click(function(){ 
+          $("#test").hide(); 
       }); 
     });
 
@@ -93,3 +94,13 @@ jQuery 语法是通过选取 HTML 元素，并对选取的元素执行某些操�
 
 - jQuery 类选择器可以通过指定的 class 查找元素。
 - 语法如下：
+
+CSS 选择器
+
+- jQuery CSS 选择器可用于改变 HTML 元素的 CSS 属性。
+- 实例
+
+下面的例子把所有 p 元素的背景颜色更改为红色： 
+![image](images/demo.jpg)
+
+## 1.9 JQuery事件

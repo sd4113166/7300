@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<script src="js/jquery.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("#div1").fadeOut();
+    $("#div2").fadeOut("slow");
+    $("#div3").fadeOut(3000,function(){alert("callback")});
+  });
+});
+</script>
+</head>
+
+<body>
+    <!-- jQuery fadeToggle() 方法可以在 fadeIn() 与 fadeOut() 方法之间进行切换。
+如果元素已淡出，则 fadeToggle() 会向元素添加淡入效果。
+如果元素已淡入，则 fadeToggle() 会向元素添加淡出效果。 -->
+<!-- $(selector).fadeToggle(speed,callback);
+可选的 speed 参数规定效果的时长。它可以取以下值："slow"、"fast" 或毫秒。
+可选的 callback 参数是 fading 完成后所执行的函数名称。
+下面的例子演示了带有不同参数的 fadeToggle() 方法： -->
+<p>以下实例演示了 fadeOut() 使用了不同参数的效果。</p>
+<button>点击淡出 div 元素。</button>
+<br><br>
+<div id="div1" style="width:80px;height:80px;background-color:red;"></div><br>
+<div id="div2" style="width:80px;height:80px;background-color:green;"></div><br>
+<div id="div3" style="width:80px;height:80px;background-color:blue;"></div>
+
+</body>
+</html>

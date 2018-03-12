@@ -137,11 +137,10 @@
 
 
 ## Javascript教程
-
-##  1.JavaScript介绍
+## [1.JavaScript介绍](JavaScript教程/1.JavaScrip介绍)
 
 1.1 JavaScript简介
-
+   
 1.2 JavaScript 用法
 
 1.3 语句
@@ -151,7 +150,7 @@
 1.5 JavaScript 注释
 
 
-## 2.JavaScript基础
+## [2.JavaScript基础](JavaScript教程/2.JavaScript基础)
 
 2.1 JavaScript 变量
 
@@ -189,13 +188,11 @@
 
 2.18 typeof 操作符
 
-##  2.阶段总结
 
-##  3.作品展示，优秀作品进行讲解
 
 ##  jQuery 教程
 
-##  1.jQuery 基础
+##  [1.jQuery基础](Jquery教程/1.Jquery基础)
 
 1.1 jQuery 教程导读
 
@@ -207,23 +204,19 @@
 
 1.5 jQuery 选择器
 
-1.6 jQuery 事件
+##  [2.jQuery 效果](Jquery教程/2.jQuery效果)
 
-##  2.jQuery 效果
+2.1 jQuery 效果-淡入淡出
 
-2.1 jQuery 效果-隐藏和显示
+2.2 jQuery 效果-滑动
 
-2.2 jQuery 效果-淡入淡出
+2.3 jQuery 效果-动画
 
-2.3 jQuery 效果-滑动
+2.4 jQuery 效果-停止动画
 
-2.4 jQuery 效果-动画
+2.5 jQuery 效果-Callback
 
-2.5 jQuery 效果-停止动画
-
-2.6 jQuery 效果-Callback
-
-2.7 jQuery 效果-Chaining
+2.6 jQuery 效果-Chaining
 
 ##  3.jQuery HTML
 
@@ -243,90 +236,5 @@
 
 3.8 jQuery选择
 
-##  4.阶段总结
 
-##  5.作品展示，优秀作品进行讲解
 
-## Bootstrap 教程
-
-##  1.Bootstrap 简介与环境安装
-
-1.1 简介
-
-1.2 环境安装
-
-##  2.Bootstrap css
-
-2.1 Bootstrap css 概览
-
-2.2 Bootstrap css 网格系统
-
-2.3 Bootstrap排版
-
-2.4 Bootstrap代码
-
-2.5 Bootstrap表格
-
-2.6 Bootstrap表单
-
-2.7 Bootstrap按钮
-
-2.8 Bootstrap图片
-
-2.9 Bootstrap辅助类
-
-2.10 Bootstrap响应式实用工具
-
-##  3.Bootstrap 布局组件\
-
-3.1 Bootstrap字体图标
-
-3.2 Bootstrap下拉菜单
-
-3.3 Bootstrap按钮组
-
-3.4 Bootstrap按钮下拉菜单
-
-3.5 Bootstrap输入框组
-
-3.6 Bootstrap导航元素
-
-3.7 Bootstrap导航栏
-
-3.8 Bootstrap面包悄导航
-
-3.9 Bootstrap分页
-
-3.10 Bootstrap标签
-
-3.11 Bootstrap徽章
-
-3.12 Bootstrap超大屏幕
-
-3.13 Bootstrap页面标题
-
-3.14 Bootstrap缩略图
-
-3.15 Bootstrap警告
-
-3.16 Bootstrap进度条
-
-3.17 Bootstrap多媒体对象
-
-3.18 Bootstrap列表组
-
-3.19 Bootstrap面板
-
-3.20 Bootstrap well示例
-
-##  4.阶段总结
-
-##  5.布置毕业设计
-   
-5.1 毕业设计要求
-
-5.2 毕业设计内容
- 
-##  6.学员毕业设计展示
-
-##  7.优秀学员毕业设计讲解

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8"> 
+<title>W3Cschool教程(w3cschool.cn)</title>
+<script src="//libs.baidu.com/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("button").click(function(){
+    $("p:eq(3)").hide();
+    /* 选取第二元素 eq */
+   // $("p:eq(1)").hide();
+  });
+});
+</script>
+</head>
+<body>
+
+<h2>这是标题</h2>
+<p>这是一个段落。</p>
+<p>这是另外一个段落。2</p>
+<p>这是另外一个段落。3</p>
+<p>这是另外一个段落。4</p>
+<p>这是另外一个段落。5</p>
+<p>这是另外一个段落。6</p>
+<button>点我</button>
+
+</body>
+</html>

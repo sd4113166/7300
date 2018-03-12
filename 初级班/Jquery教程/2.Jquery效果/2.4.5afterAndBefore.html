@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="js/jquery.js"></script>
+<script>
+$(document).ready(function(){
+  $("#btn1").click(function(){
+    $("img").before("<b>Before</b>");
+  });
+
+  $("#btn2").click(function(){
+    $("img").after("<i>After</i>");
+  });
+});
+</script>
+</head>
+
+<body>
+<img src="images/eg_w3school.gif" alt="W3School Logo" />
+<br><br>
+<button id="btn1">在图片前面添加文本</button>
+<button id="btn2">在图片后面添加文本</button>
+<!-- https://www.cnblogs.com/afei-qwerty/p/6682963.html -->
+</body>
+</html>
